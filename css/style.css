@@ -1,0 +1,12 @@
+.img1{
+    height: 100px;
+    width: 100px;
+}
+.p1{
+    font-size: 35px;
+}
+.p2{
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered !important;
+}
