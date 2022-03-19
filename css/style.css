@@ -42,3 +42,10 @@ h3{
 .item1{
     width: 40%;
 }
+.yeees{
+    background-color: orangered;
+}
+input{
+    border-radius: 5px;
+    border: 1px solid white;
+}
