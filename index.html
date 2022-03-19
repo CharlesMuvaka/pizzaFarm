@@ -9,7 +9,7 @@
     <title>pizzaFarm</title>
 </head>
 <body>
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <div class="container">
             <nav class="navbar navbar-expand-sm navbar-dark ">
                 <a class="navbar-brand p1"><img src="./images/pizzz.jpeg" class="img1">Farm</a>
@@ -32,134 +32,132 @@
                 </div>
             </nav>
         </div>
-    </div>
-    <div class="container-fluid position-relative">
-        <div class="row justify-content-around text-white bg-dark  ">
-            <h3 class="my-5">Welcome to Pizza farm</h3>        
-            <div class="col-md-3 mb-3">
-                <label for="from"> Choose Pizza size</label>
-                <select class="form-select my-1" name="from" id="from">
-                    <option selected>Select yourPizza</option>
-                    <option value="1">Small</option>
-                    <option value="2">Medium</option>
-                    <option value="3">Large</option>   
-                </select>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="from"> Add toppings</label>
-                <select class="form-select my-1" name="from" id="from">
-                    <option selected>Select topping....</option>
-                    <option value="1">Pepperoni</option>
-                    <option value="2">Mushroom.</option>
-                    <option value="2">Extra cheese.</option>
-                    <option value="2">Sausage.</option>
-                    <option value="2">Onion.</option>
-                    <option value="2">Black olives.</option>
-                    <option value="2">Green pepper.</option>
-                    <option value="2">Fresh garlic.</option>
-                </select>
-            </div>
-            <div class="col-md-3 mb-3">
-                <label for="from"> Choose crest</label>
-                <select class="form-select my-1" name="from" id="from">
-                    <option selected>Select crest ...</option>
-                    <option value="1">Cheese-Stuffed Crust </option>
-                    <option value="2">Pizza Bagels</option>
-                    <option value="2">Flatbread</option>
-                    <option value="2">Thin Crust</option>
-                    <option value="2">Sicilian Style</option>
-                    <option value="2">Chicago Deep Dish</option>
-                    <option value="2">Neapolitan Crust</option>    
-                </select>
-            </div>
-            <div class="col-md-2 mb-3">
-                <button class="btn btn-info mt-4" >Place order now</button>
-            </div>
-        </div>
-        <div class="row position-absolute text-white text-center" id="row1">
-            <div class="col-sm-6 my-3">
-                <h5>Details</h5>
-                <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3">
-                    <div class="item">
-                        <p>Pizza size</p>
-                        <p>Small</p>
-                    </div>
-                    <div class="item">
-                        <p>Amount</p>
-                        <p>Ksh. 250</p>
-                    </div>
-                    <div class="item">
-                        <label for="qua1">Quantity</label>
-                        <input type="number" class="w-100" name="qua1" placeholder="1">
-                    </div>
-                    <div class="item">
-                        <label for="qua1">Total</label>
-                        <input type="number" class="w-100" name="qua1" placeholder="1" disabled>
-                    </div>
+        <div class="container-fluid position-relative">
+            <div class="row justify-content-around text-white bg-dark  ">
+                <h3 class="my-5">Welcome to Pizza farm</h3>        
+                <div class="col-md-3 mb-3">
+                    <label for="from"> Choose Pizza size</label>
+                    <select class="form-select my-1" name="from" id="from">
+                        <option selected>Select yourPizza</option>
+                        <option value="1">Small</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>   
+                    </select>
                 </div>
-                <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3">
-                    <div class="item">
-                        <p>Topping</p>
-                        <p>pepperoni</p>
-                    </div>
-                    <div class="item">
-                        <p>Amount</p>
-                        <p>Ksh. 250</p>
-                    </div>
-                    <div class="item">
-                        <label for="qua1">Quantity</label>
-                        <input type="number" class="w-100" name="qua1" placeholder="1">
-
-                    </div>
-                    <div class="item">
-                        <label for="qua1">Total</label>
-                        <input type="number" class="w-100" name="qua1" placeholder="1" disabled>
-
-                    </div>
-
+                <div class="col-md-3 mb-3">
+                    <label for="from"> Add toppings</label>
+                    <select class="form-select my-1" name="from" id="from">
+                        <option selected>Select topping....</option>
+                        <option value="1">Pepperoni</option>
+                        <option value="2">Mushroom.</option>
+                        <option value="2">Extra cheese.</option>
+                        <option value="2">Sausage.</option>
+                        <option value="2">Onion.</option>
+                        <option value="2">Black olives.</option>
+                        <option value="2">Green pepper.</option>
+                        <option value="2">Fresh garlic.</option>
+                    </select>
                 </div>
-                <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3" class="crust">
-                    <div class="item">
-                        <p>Crust</p>
-                        <p>Stuffed</p>
-                    </div>
-                    <div class="item">
-                        <p>Amount</p>
-                        <p>Ksh. 250</p>
-                    </div>
-                    <div class="item">
-                        <label for="qua1">Quantity</label>
-                        <input type="number" class="w-100" name="qua1" placeholder="1">
-                    </div>
-                    <div class="item">
-                        <label for="qua1">Total</label>
-                        <input disabled type="number" class="w-100" name="qua1" placeholder="1">
-                    </div>
-                </div>  
-                <div class="d-flex align-items-center justify-content-between border bg-dark">
-                    <div class="item1">
-                        <p>Total Payable Amount</p>   
-                    </div>
-                    <div class="item ">
-                        <label for="qua1">Total</label>
-                        <input disabled type="number" class="w-100" name="qua1" placeholder="1">
-                    </div>
-                </div> 
-                <button class="btn btn-warning w-100 mt-3">Proceed to Payments</button>   
+                <div class="col-md-3 mb-3">
+                    <label for="from"> Choose crest</label>
+                    <select class="form-select my-1" name="from" id="from">
+                        <option selected>Select crest ...</option>
+                        <option value="1">Cheese-Stuffed Crust </option>
+                        <option value="2">Pizza Bagels</option>
+                        <option value="2">Flatbread</option>
+                        <option value="2">Thin Crust</option>
+                        <option value="2">Sicilian Style</option>
+                        <option value="2">Chicago Deep Dish</option>
+                        <option value="2">Neapolitan Crust</option>    
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <button class="btn yeees mt-4" >Place order now</button>
+                </div>
             </div>
-            <div class="col-md-6 my-3 d-flex flex-column align-items-center">
-                <div class="cart1"></div>
-                <h3 class="mt-5 mb-2  text-center">Need it delivered??</h3>
-                <p class="mt-1 text-white">Deliveries made for free</p>
-                <input type="text" class="mt-2" name="contact" placeholder="enter your Phone Number">
-                <input type="text" class="mt-2" name="location" placeholder="enter your location">
-                <button class="btn btn-warning w-50 mt-3">Submit</button>
+            <div class="row position-absolute text-white text-center" id="row1">
+                <div class="col-sm-6 my-3">
+                    <h5>Details</h5>
+                    <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3">
+                        <div class="item">
+                            <p>Pizza size</p>
+                            <p>Small</p>
+                        </div>
+                        <div class="item">
+                            <p>Amount</p>
+                            <p>Ksh. 250</p>
+                        </div>
+                        <div class="item">
+                            <label for="qua1">Quantity</label>
+                            <input type="number" class="w-100" name="qua1" placeholder="1">
+                        </div>
+                        <div class="item">
+                            <label for="qua1">Total</label>
+                            <input type="number" class="w-100" name="qua1" placeholder="1" disabled>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3">
+                        <div class="item">
+                            <p>Topping</p>
+                            <p>pepperoni</p>
+                        </div>
+                        <div class="item">
+                            <p>Amount</p>
+                            <p>Ksh. 250</p>
+                        </div>
+                        <div class="item">
+                            <label for="qua1">Quantity</label>
+                            <input type="number" class="w-100" name="qua1" placeholder="1">
+                        </div>
+                        <div class="item">
+                            <label for="qua1">Total</label>
+                            <input type="number" class="w-100" name="qua1" placeholder="1" disabled>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3" class="crust">
+                        <div class="item">
+                            <p>Crust</p>
+                            <p>Stuffed</p>
+                        </div>
+                        <div class="item">
+                            <p>Amount</p>
+                            <p>Ksh. 250</p>
+                        </div>
+                        <div class="item">
+                            <label for="qua1">Quantity</label>
+                            <input type="number" class="w-100" name="qua1" placeholder="1">
+                        </div>
+                        <div class="item">
+                            <label for="qua1">Total</label>
+                            <input disabled type="number" class="w-100" name="qua1" placeholder="1">
+                        </div>
+                    </div>  
+                    <div class="d-flex align-items-center justify-content-between border bg-dark">
+                        <div class="item1">
+                            <p>Total Payable Amount</p>   
+                        </div>
+                        <div class="item ">
+                            <label for="qua1">Total</label>
+                            <input disabled type="number" class="w-100" name="qua1" placeholder="1">
+                        </div>
+                    </div> 
+                    <button class="btn yeees w-100 mt-3">Proceed to Payments</button>   
+                </div>
+                <div class="col-md-6 my-3 d-flex flex-column align-items-center">
+                    <div class="cart1"></div>
+                    <h3 class="mt-5 mb-2  text-center">Need it delivered??</h3>
+                    <p class="mt-1 text-white">Deliveries made for free</p>
+                    <input type="text" class="mt-2" name="contact" placeholder="enter your Phone Number">
+                    <input type="text" class="mt-2" name="location" placeholder="enter your location">
+                    <button class="btn yeees w-50 mt-3">Submit</button>
+                </div>
             </div>
         </div>
     </div>
+    
     <div class="container-fluid"> 
         <div class="row mt-3 text-white">
-            <h4>Toppings</h4>
+            <h4 class="my-3 text-center">Toppings</h4>
             <div class="col-md-3 col-sm-6  text-center text-white">
                 <div class="mush2 bg-dark">
                     <h3>Pepperoni</h3>
@@ -174,79 +172,79 @@
             <div class="col-md-3 col-sm-6 text-center text-white">
                 <div class="mush2 bg-dark">
                     <h3>Mushroom</h3>
-                    <img class=" border mush1" src="./images/top1.jpg "  alt="">
+                    <img class=" border mush1" src="./images/ppp4.jpeg "  alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.</p>
                     <div class="d-flex justify-content-evenly">
-                      <p>Ksh.250/=</p>
+                      <p>Ksh.200/=</p>
                       <button id="see">see all</button>
                 </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 text-center text-white ">
                 <div class="mush2 bg-dark">
-                    <h3>Mushroom</h3>
-                    <img class=" border mush1" src="./images/top1.jpg "  alt="">
+                    <h3>Extra Cheese</h3>
+                    <img class=" border mush1" src="./images/pepperoni3.jpeg "  alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.</p>
                     <div class="d-flex justify-content-evenly">
-                      <p>Ksh.250/=</p>
+                      <p>Ksh.300/=</p>
                       <button id="see">see all</button>
                 </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 text-center text-white">
                 <div class="mush2 bg-dark">
-                    <h3>Mushroom</h3>
-                    <img class=" border mush1" src="./images/top1.jpg "  alt="">
+                    <h3>Black Olives</h3>
+                    <img class=" border mush1" src="./images/pep4.jpeg "  alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.</p>
                     <div class="d-flex justify-content-evenly">
-                      <p>Ksh.250/=</p>
+                      <p>Ksh.350/=</p>
                       <button id="see">see all</button>
                 </div>
                 </div>
             </div>   
         </div>
         <div class="row mt-3 text-white">
-            <h4>Crests</h4>
+            <h4 class="my-3 text-center">Crests</h4>
             <div class="col-md-3 col-sm-6  text-center text-white">
                 <div class="mush2 bg-dark">
-                    <h3>Pepperoni</h3>
-                    <img class="mush1 border" src="./images/peper.jpeg" alt="">
+                    <h3 >Hot Dog Crust</h3>
+                    <img class="mush1 border" src="./images/hotdogcrust.jpeg" alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.</p>
                     <div class="d-flex justify-content-evenly">
-                      <p>Ksh.250/=</p>
+                      <p>Ksh.150/=</p>
                       <button id="see">see all</button>
                     </div>
                 </div>   
             </div>
             <div class="col-md-3 col-sm-6 text-center text-white">
                 <div class="mush2 bg-dark">
-                    <h3>Mushroom</h3>
-                    <img class=" border mush1" src="./images/top1.jpg "  alt="">
+                    <h3>Kale Crust</h3>
+                    <img class=" border mush1" src="./images/kalecrust.jpeg"  alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.</p>
                     <div class="d-flex justify-content-evenly">
-                      <p>Ksh.250/=</p>
+                      <p>Ksh.450/=</p>
                       <button id="see">see all</button>
                 </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 text-center text-white ">
                 <div class="mush2 bg-dark">
-                    <h3>Mushroom</h3>
-                    <img class=" border mush1" src="./images/top1.jpg "  alt="">
+                    <h3>Keto Crust</h3>
+                    <img class=" border mush1" src="./images/ketopizzacrust.jpeg"  alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.</p>
                     <div class="d-flex justify-content-evenly">
-                      <p>Ksh.250/=</p>
+                      <p>Ksh.300/=</p>
                       <button id="see">see all</button>
                 </div>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6 text-center text-white">
                 <div class="mush2 bg-dark">
-                    <h3>Mushroom</h3>
-                    <img class=" border mush1" src="./images/top1.jpg "  alt="">
+                    <h3>Pizza Bagels</h3>
+                    <img class=" border mush1" src="./images/bagels.jpeg"  alt="">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quos.</p>
                     <div class="d-flex justify-content-evenly">
-                      <p>Ksh.250/=</p>
+                      <p>Ksh.600/=</p>
                       <button id="see">see all</button>
                 </div>
                 </div>
