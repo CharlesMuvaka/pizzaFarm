@@ -32,3 +32,10 @@ body{
     border: 1px solid orangered;
     background-color: orangered;
 }
+.item{
+    width: 23%;
+
+}
+.item1{
+    width: 40%;
+}
