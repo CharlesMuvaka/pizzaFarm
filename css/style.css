@@ -49,3 +49,16 @@ input{
     border-radius: 5px;
     border: 1px solid white;
 }
+.cart1{
+    width: 90%;
+    height: 50%;
+    background-image: url("../images/del2.jpeg");
+}
+.position-absolute{
+    top: 0;
+    width: 100%;
+}
+#row1{
+    background-color: rgb(70, 37, 37);
+    display: none;
+}
