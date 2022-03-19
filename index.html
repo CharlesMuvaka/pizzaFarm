@@ -9,10 +9,10 @@
     <title>pizzaFarm</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <div class="container">
-            <nav class="navbar navbar-expand-sm navbar-light">
-                <a class="navbar-brand p1"><img src="./images/piz2.jpeg" class="img1">Farm</a>
+            <nav class="navbar navbar-expand-sm navbar-dark ">
+                <a class="navbar-brand p1"><img src="./images/pizzz.jpeg" class="img1">Farm</a>
                 <button
                 class="navbar-toggler"
                 type="button"
@@ -25,24 +25,66 @@
                 <div class=" collapse navbar-collapse" id="yes">
                     <ul class="navbar-nav ms-auto">
                         <li><a class="nav-link  p2 px-3">Home</a></li>
-                        <li><a class="nav-link  p2 px-3">Delivery</a></li>
-                        <li><a class="nav-link  p2 px-3">About us</a></li>
+                        <li><a class="nav-link  p2 px-3">Toppings</a></li>
+                        <li><a class="nav-link  p2 px-3">Crests</a></li>
                         <li><a class="nav-link  p2 px-3">Contacts</a></li>
-    
                     </ul>
                 </div>
-    
             </nav>
         </div>
-    
     </div>
-    <div class="container-fluid"></div>
+    <div class="container-fluid position-relative">
+        <div class="row justify-content-around text-white bg-dark  ">
+            <h3 class="my-5">Welcome to Pizza farm</h3>        
+            <div class="col-md-3 mb-3">
+                <label for="from"> Choose Pizza size</label>
+                <select class="form-select my-1" name="from" id="from">
+                    <option selected>Select yourPizza</option>
+                    <option value="1">Small</option>
+                    <option value="2">Medium</option>
+                    <option value="3">Large</option>   
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="from"> Add toppings</label>
+                <select class="form-select my-1" name="from" id="from">
+                    <option selected>Select topping....</option>
+                    <option value="1">Pepperoni</option>
+                    <option value="2">Mushroom.</option>
+                    <option value="2">Extra cheese.</option>
+                    <option value="2">Sausage.</option>
+                    <option value="2">Onion.</option>
+                    <option value="2">Black olives.</option>
+                    <option value="2">Green pepper.</option>
+                    <option value="2">Fresh garlic.</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="from"> Choose crest</label>
+                <select class="form-select my-1" name="from" id="from">
+                    <option selected>Select crest ...</option>
+                    <option value="1">Cheese-Stuffed Crust </option>
+                    <option value="2">Pizza Bagels</option>
+                    <option value="2">Flatbread</option>
+                    <option value="2">Thin Crust</option>
+                    <option value="2">Sicilian Style</option>
+                    <option value="2">Chicago Deep Dish</option>
+                    <option value="2">Neapolitan Crust</option>    
+                </select>
+            </div>
+            <div class="col-md-2 mb-3">
+                <button class="btn btn-info mt-4" >Place order now</button>
+            </div>
+        </div>
     
     
     
+    
+	
     <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 	<script src="./js/popper-2.11.2.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
 	<script src="./js/script.js"></script> 
 </body>
 </html>
