@@ -8,7 +8,7 @@
  + [Reference](#reference)
  + [Authors Info](#author-Info)
  ## Description
- <p>PizzaFarm is a website that offers individuals with the tastiest pizzas around and also the pizza is also delivered to your requested destination. There is a variety of choices a user can select inorder to make it more tastier.</p>
+ <p>PizzaFarm is a website that offers individuals with the tastiest pizzas around and also delivers to your requested destination. There is a variety of choices a user can select inorder to make it more tastier.</p>
  
  ## Installation
  ### Requirements
@@ -30,6 +30,20 @@
    ```
    [Go Back to the top](#PizzaFarm)
  ## Behaviour Driven Development
+  * There is a form to collect users pizza choice
+     * Input - select pizza size
+     * Input - select topping
+     * Input - select crest
+     * output - proceed to payments.
+  * There is a table to show the user items ordered in the cart.
+     * input - increase the quantity of pizza requested.
+     * input - increase the amount of toppings requested.
+     * input - increase the amount of crusts requested.
+     * output - proceed to payments.
+  * the is a form to collect users location and phone number.
+     * input - Enter your location.
+     * input - Enter your mobile number.
+     * output - item will be delivered in......     
  
 
    [Go Back to the top](#PizzaFarm)
