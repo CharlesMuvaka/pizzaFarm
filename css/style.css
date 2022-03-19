@@ -13,3 +13,14 @@ body{
     font-weight: bold;
     color: orangered !important;
 }
+.mush2{
+    width: 99%;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 3px 3px 2px grey;
+}
+.mush1{
+    height: 200px;
+    width: 98%; 
+    border-radius: 10px;
+}
