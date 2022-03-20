@@ -39,6 +39,7 @@ h3{
     width: 23%;
 
 }
+
 .item1{
     width: 40%;
 }
@@ -61,4 +62,10 @@ input{
 #row1{
     background-color: rgb(70, 37, 37);
     display: none;
+}
+#topName, #crestName, #pSize, #price, #topPrice, #crestPrice{
+    color: orangered;
+}
+#sizeTotal, #topTotal, #crestTotal{
+    color: white;
 }
