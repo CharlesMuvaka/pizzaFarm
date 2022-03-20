@@ -33,103 +33,116 @@
             </nav>
         </div>
         <div class="container-fluid position-relative">
-            <div class="row justify-content-around text-white bg-dark  ">
-                <h3 class="my-5">Welcome to Pizza farm</h3>        
-                <div class="col-md-3 mb-3">
-                    <label for="from"> Choose Pizza size</label>
-                    <select class="form-select my-1" name="from" id="from">
-                        <option selected>Select yourPizza</option>
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>   
-                    </select>
+            <form  method="" class="form1">
+                <div class="row justify-content-around text-white bg-dark  ">
+                    <h3 class="my-5">Welcome to Pizza farm</h3>        
+                    <div class="col-md-3 mb-3">
+                        <label for="sizePizza"> Choose Pizza size</label>
+                        <select class="form-select my-1" name="sizePizza" id="sizePizza" required>
+                            <option selected>Select yourPizza</option>
+                            <option value="1">Small</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Large</option>   
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="topping"> Add toppings</label>
+                        <select class="form-select my-1" name="topping" id="topping">
+                            <option selected>Select topping...</option>
+                            <option value="1">Pepperoni</option>
+                            <option value="2">Mushroom.</option>
+                            <option value="3">Extra cheese.</option>
+                            <option value="4">Black olives.</option>
+                            <option value="5">Green pepper.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="crest"> Choose crest</label>
+                        <select class="form-select my-1" name="crest" id="crest">
+                            <option selected>Select crest ...</option>
+                            <option value="6">Cheese-Stuffed Crust </option>
+                            <option value="7">Pizza Bagels</option>
+                            <option value="8">Flatbread</option>
+                            <option value="9">Thin Crust</option>
+                            <option value="10">Sicilian Style</option>
+                               
+                        </select>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <button class="btn yeees mt-4" >Place order now</button>
+                    </div>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <label for="from"> Add toppings</label>
-                    <select class="form-select my-1" name="from" id="from">
-                        <option selected>Select topping....</option>
-                        <option value="1">Pepperoni</option>
-                        <option value="2">Mushroom.</option>
-                        <option value="2">Extra cheese.</option>
-                        <option value="2">Sausage.</option>
-                        <option value="2">Onion.</option>
-                        <option value="2">Black olives.</option>
-                        <option value="2">Green pepper.</option>
-                        <option value="2">Fresh garlic.</option>
-                    </select>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="from"> Choose crest</label>
-                    <select class="form-select my-1" name="from" id="from">
-                        <option selected>Select crest ...</option>
-                        <option value="1">Cheese-Stuffed Crust </option>
-                        <option value="2">Pizza Bagels</option>
-                        <option value="2">Flatbread</option>
-                        <option value="2">Thin Crust</option>
-                        <option value="2">Sicilian Style</option>
-                        <option value="2">Chicago Deep Dish</option>
-                        <option value="2">Neapolitan Crust</option>    
-                    </select>
-                </div>
-                <div class="col-md-2 mb-3">
-                    <button class="btn yeees mt-4" >Place order now</button>
-                </div>
-            </div>
+            </form>
             <div class="row position-absolute text-white text-center" id="row1">
-                <div class="col-sm-6 my-3">
+                <div class="col-sm-8 my-3">
                     <h5>Details</h5>
-                    <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3">
+                    <div class="d-flex align-items-center justify-content-evenly border mb-3">
                         <div class="item">
                             <p>Pizza size</p>
-                            <p>Small</p>
+                            <p id="pSize"></p>
                         </div>
                         <div class="item">
                             <p>Amount</p>
-                            <p>Ksh. 250</p>
+                            <p id="price"></p>
                         </div>
                         <div class="item">
-                            <label for="qua1">Quantity</label>
-                            <input type="number" class="w-100" name="qua1" placeholder="1">
+                            <p>Quantity</p>
+                            <input type="number" class="w-75" name="qua1" id="sizeQua" value="1">
                         </div>
                         <div class="item">
-                            <label for="qua1">Total</label>
-                            <input type="number" class="w-100" name="qua1" placeholder="1" disabled>
+                            <p>Total</p>
+                            <input type="number" class="w-75" name="qua1" id="sizeTotal" value="1" disabled>
+                        </div>
+                        <div class="item">
+                            <button class="btn btn-light w-50" id="save1">Save</button>
+                            <button class="btn btn-light w-50 mt-1" id="add1">Add</button>
+
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3">
                         <div class="item">
                             <p>Topping</p>
-                            <p>pepperoni</p>
+                            <p id="topName">CLICK TO ADD TOPPING</p>
                         </div>
                         <div class="item">
                             <p>Amount</p>
-                            <p>Ksh. 250</p>
+                            <p id="topPrice"></p>
                         </div>
                         <div class="item">
-                            <label for="qua1">Quantity</label>
-                            <input type="number" class="w-100" name="qua1" placeholder="1">
+                            <p>Quantity</p>
+                            <input type="number" class="w-75" name="qua1" id="topQua" placeholder="1">
                         </div>
                         <div class="item">
-                            <label for="qua1">Total</label>
-                            <input type="number" class="w-100" name="qua1" placeholder="1" disabled>
+                            <p>Total</p>
+                            <input type="number" class="w-75" name="qua1" id="topTotal" disabled>
+                        </div>
+                        <div class="item">
+                            <button class="btn btn-light w-50">Save</button>
+                            <button class="btn btn-light w-50 mt-1">Add</button>
+
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3" class="crust">
                         <div class="item">
                             <p>Crust</p>
-                            <p>Stuffed</p>
+                            <p id="crestName">CLICK TO ADD CREST</p>
                         </div>
                         <div class="item">
                             <p>Amount</p>
-                            <p>Ksh. 250</p>
+                            <p id="crestPrice"></p>
                         </div>
                         <div class="item">
-                            <label for="qua1">Quantity</label>
-                            <input type="number" class="w-100" name="qua1" placeholder="1">
+                            <p>Quantity</p>
+                            <input type="number" class="w-75" id="crestQua" placeholder="1">
                         </div>
                         <div class="item">
-                            <label for="qua1">Total</label>
-                            <input disabled type="number" class="w-100" name="qua1" placeholder="1">
+                            <p>Total</p>
+                            <input type="number" class="w-75" id="crestTotal" disabled>
+                        </div>
+                        <div class="item">
+                            <button class="btn btn-light w-50">Save</button>
+                            <button class="btn btn-light w-50 mt-1">Add</button>
+
                         </div>
                     </div>  
                     <div class="d-flex align-items-center justify-content-between border bg-dark">
@@ -137,13 +150,13 @@
                             <p>Total Payable Amount</p>   
                         </div>
                         <div class="item ">
-                            <label for="qua1">Total</label>
-                            <input disabled type="number" class="w-100" name="qua1" placeholder="1">
+                            <label for="qua1">Grand-Total</label>
+                            <input disabled type="number" class="w-100" name="qua1" id="grandTotal">
                         </div>
                     </div> 
                     <button class="btn yeees w-100 mt-3">Proceed to Payments</button>   
                 </div>
-                <div class="col-md-6 my-3 d-flex flex-column align-items-center">
+                <div class="col-md-4 my-3 d-flex flex-column align-items-center">
                     <div class="cart1"></div>
                     <h3 class="mt-5 mb-2  text-center">Need it delivered??</h3>
                     <p class="mt-1 text-white">Deliveries made for free</p>
