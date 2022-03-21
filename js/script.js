@@ -190,6 +190,7 @@ function order(e){
 
 const out = document.querySelector("#out").onclick = function(){
     output.style.display = "none"; 
+    myform.reset();
 
 }
 const out2 = document.querySelector(".out2").onclick = function(){
