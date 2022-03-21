@@ -35,15 +35,19 @@
      * Input - select topping
      * Input - select crest
      * output - proceed to payments.
+  * Displays an error if pizza size not selected
+     * output - select your pizza size.
   * There is a table to show the user items ordered in the cart.
      * input - increase the quantity of pizza requested.
      * input - increase the amount of toppings requested.
      * input - increase the amount of crusts requested.
      * output - proceed to payments.
-  * the is a form to collect users location and phone number.
+  * There is a form to collect users location and phone number.
      * input - Enter your location.
      * input - Enter your mobile number.
-     * output - item will be delivered in......     
+     * output - item will be delivered in...... 
+  * Displays an error if location and number not entered
+     * output - please fill in the form.    
  
 
    [Go Back to the top](#PizzaFarm)
