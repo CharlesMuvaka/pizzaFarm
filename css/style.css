@@ -66,6 +66,6 @@ input{
 #topName, #crestName, #pSize, #price, #topPrice, #crestPrice{
     color: orangered;
 }
-#sizeTotal, #topTotal, #crestTotal{
+#sizeTotal, #topTotal, #crestTotal, #grandTotal{
     color: white;
 }
