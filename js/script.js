@@ -1,4 +1,5 @@
 const myform = document.querySelector(".form1");
+const output = document.querySelector("#row1");
 
 myform.addEventListener("submit", order);
 
@@ -6,26 +7,27 @@ function order(e){
     e.preventDefault();
     const pizzaErr =  document.querySelector("#sizePizza");
     const pizzaSize = pizzaErr.value;
-    const output = document.querySelector("#row1");
+    
     const pSize = document.querySelector("#pSize");
     const sizeQua = document.querySelector("#sizeQua");
-    const sizeTotal = document.querySelector("#sizeTotal");
+    var sizeTotal = document.querySelector("#sizeTotal");
     const sizePrice = document.querySelector("#price");
     
     const pizzaTopping = document.querySelector("#topping").value;
 
     const topName = document.querySelector("#topName");
     const topPrice = document.querySelector("#topPrice");
-    const topQUa = document.querySelector("#topQua")
-    const topTotal = document.querySelector("#topTotal");
+    const topQua = document.querySelector("#topQua")
+    var topTotal = document.querySelector("#topTotal");
     
     const pizzaCrest = document.querySelector("#crest").value;
     const crestName = document.querySelector("#crestName");
     const crestPrice = document.querySelector("#crestPrice");
-    const crestQUa = document.querySelector("#crestQua")
-    const crestTotal = document.querySelector("#crestTotal");
+    const crestQua = document.querySelector("#crestQua")
+    var crestTotal = document.querySelector("#crestTotal");
 
-    const grandTotal = document.querySelector("#grandTotal");  
+    const grandTotal = document.querySelector("#grandTotal");
+    var newTot ,topTot, crestTot;   
 
     function Pizza(pizzaSize, price){
         this.pizzaSize = pizzaSize;
@@ -120,17 +122,97 @@ function order(e){
         crestTotal.value = crestPrice.innerHTML;
     }
 
-    // const save1 = document.querySelector("#save1")
+    const save1 = document.querySelector("#save1");
+    const save2 = document.querySelector("#save2");
+    const save3 = document.querySelector("#save3");
 
-    // if((pizzaCrest === "Select crest ...") && (pizzaTopping === "Select topping...")){
-    //     grandTotal.value = ;
-    // }else if(pizzaCrest === "Select crest ..."){
-    //     grandTotal.value = sizePrice.innerHTML + topPrice.innerHTML;
-    // }
-    // grandTotal.value = sizePrice.innerHTML;
-    // console.log(grandTotal.value);
-    
-    output.style.display = "flex";
+    save1.onclick = function(){
+        newTot = sizeQua.value * sizePrice.innerHTML;
+        sizeTotal.value = newTot;
 
+        topTot = topQua.value * topPrice.innerHTML;
+        topTotal.value = topTot;
+
+        crestTot = crestQua.value * crestPrice.innerHTML
+        crestTotal = crestTot ;
+        
+        if((pizzaCrest === "Select crest ...") && (pizzaTopping === "Select topping...")){
+            return grandTotal.value = newTot;
+        }else if((pizzaCrest == "Select crest ...") && (pizzaTopping !== "Select topping...")){
+            return grandTotal.value = newTot + topTot;
+        }else if((pizzaCrest !== "Select crest ...") && (pizzaTopping == "Select topping...")){
+            return grandTotal.value = newTot + crestTot;
+        }else{
+          return  grandTotal.value = newTot + crestTot + topTot;
+
+        }
+        
+    }
     
+    save2.onclick = function(){
+        newTot = sizeQua.value * sizePrice.innerHTML;
+        sizeTotal.value = newTot;
+
+        topTot = topQua.value * topPrice.innerHTML;
+        topTotal.value = topTot;
+
+        crestTot = crestQua.value * crestPrice.innerHTML
+        crestTotal.value = crestTot ;
+
+        if(pizzaCrest == "Select crest ..."){
+           return grandTotal.value = topTot + newTot;
+        }else{
+           return grandTotal.value = newTot + crestTot + topTot;
+
+        }
+    }
+    save3.onclick = function(){
+        newTot = sizeQua.value * sizePrice.innerHTML;
+        sizeTotal.value = newTot;
+
+        topTot = topQua.value * topPrice.innerHTML;
+        topTotal.value = topTot;
+
+        crestTot = crestQua.value * crestPrice.innerHTML
+        crestTotal.value = crestTot ;
+
+        if(pizzaTopping == "Select crest ..."){
+         return   grandTotal.value = newTot + crestTot;
+        }else{
+          return  grandTotal.value = newTot + topTot + crestTot;
+        }
+    }
+   
+    
+    output.style.display = "flex";   
+}  
+
+
+const out = document.querySelector("#out").onclick = function(){
+    output.style.display = "none"; 
+
 }
+const out2 = document.querySelector(".out2").onclick = function(){
+    output.style.display = "none"; 
+
+}
+const out1 = document.querySelector(".out1").onclick = function(){
+    output.style.display = "none"; 
+
+}
+
+const submit1 = document.querySelector("#sub").onclick = function(){
+    const userNumber = document.querySelector("#contact").value;
+    const userLocation = document.querySelector("#location").value;
+    const output = document.querySelector("#output");
+
+    if((userNumber === "") && (userLocation === "")){
+        alert("please fill in the form")
+    }else{
+        output.innerHTML = "Dear user your order will be delivered at" + " " + userLocation+ " " + "We will call you immediately";
+
+    }
+
+    
+
+};
