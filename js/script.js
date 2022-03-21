@@ -134,7 +134,7 @@ function order(e){
         topTotal.value = topTot;
 
         crestTot = crestQua.value * crestPrice.innerHTML
-        crestTotal = crestTot ;
+        crestTotal.value = crestTot ;
         
         if((pizzaCrest === "Select crest ...") && (pizzaTopping === "Select topping...")){
             return grandTotal.value = newTot;
