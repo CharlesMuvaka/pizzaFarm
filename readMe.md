@@ -75,7 +75,7 @@
  <p>If you find any bug, open an issue <a href="https://github.com/CharlesMuvaka12345/pizzaFarm/issues">here</a> by including your search query and the expected result.</p>
  <p>Any suggestions or corrections to the code would highly be appreciated</p>
 
-  * link to live site: 
+  * link to live site: https://charlesmuvaka12345.github.io/pizzaFarm/
 
  ## Reference
  * Materialize CSS
