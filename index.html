@@ -76,7 +76,7 @@
             <div class="row position-absolute text-white text-center" id="row1">
                 <div class="col-sm-8 my-3">
                     <h5>Details</h5>
-                    <div class="d-flex align-items-center justify-content-evenly border mb-3">
+                    <div class="d-flex align-items-center bg-dark justify-content-evenly border mb-3">
                         <div class="item">
                             <p>Pizza size</p>
                             <p id="pSize"></p>
@@ -102,7 +102,7 @@
                     <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3">
                         <div class="item">
                             <p>Topping</p>
-                            <p id="topName">CLICK TO ADD TOPPING</p>
+                            <p id="topName" class="out1">CLICK TO ADD TOPPING</p>
                         </div>
                         <div class="item">
                             <p>Amount</p>
@@ -110,22 +110,22 @@
                         </div>
                         <div class="item">
                             <p>Quantity</p>
-                            <input type="number" class="w-75" name="qua1" id="topQua" placeholder="1">
+                            <input type="number" class="w-75" name="qua1" id="topQua" value="1">
                         </div>
                         <div class="item">
                             <p>Total</p>
                             <input type="number" class="w-75" name="qua1" id="topTotal" disabled>
                         </div>
                         <div class="item">
-                            <button class="btn btn-light w-50">Save</button>
-                            <button class="btn btn-light w-50 mt-1">Add</button>
+                            <button class="btn btn-light w-50" id="save2">Save</button>
+                            <button class="btn btn-light w-50 mt-1" add="add2">Add</button>
 
                         </div>
                     </div>
                     <div class="d-flex align-items-center justify-content-evenly border bg-dark mb-3" class="crust">
                         <div class="item">
                             <p>Crust</p>
-                            <p id="crestName">CLICK TO ADD CREST</p>
+                            <p id="crestName" class="out2">CLICK TO ADD CREST</p>
                         </div>
                         <div class="item">
                             <p>Amount</p>
@@ -133,15 +133,15 @@
                         </div>
                         <div class="item">
                             <p>Quantity</p>
-                            <input type="number" class="w-75" id="crestQua" placeholder="1">
+                            <input type="number" class="w-75" id="crestQua" value="1">
                         </div>
                         <div class="item">
                             <p>Total</p>
                             <input type="number" class="w-75" id="crestTotal" disabled>
                         </div>
                         <div class="item">
-                            <button class="btn btn-light w-50">Save</button>
-                            <button class="btn btn-light w-50 mt-1">Add</button>
+                            <button class="btn btn-light w-50" id="save3">Save</button>
+                            <button class="btn btn-light w-50 mt-1" id="add3">Add</button>
 
                         </div>
                     </div>  
@@ -154,15 +154,16 @@
                             <input disabled type="number" class="w-100" name="qua1" id="grandTotal">
                         </div>
                     </div> 
-                    <button class="btn yeees w-100 mt-3">Proceed to Payments</button>   
+                    <button class="btn yeees w-100 mt-3" id="out">Proceed to Payments</button>   
                 </div>
                 <div class="col-md-4 my-3 d-flex flex-column align-items-center">
                     <div class="cart1"></div>
                     <h3 class="mt-5 mb-2  text-center">Need it delivered??</h3>
                     <p class="mt-1 text-white">Deliveries made for free</p>
-                    <input type="text" class="mt-2" name="contact" placeholder="enter your Phone Number">
-                    <input type="text" class="mt-2" name="location" placeholder="enter your location">
-                    <button class="btn yeees w-50 mt-3">Submit</button>
+                    <input  type="text" class="mt-2" id="contact" placeholder="enter your Phone Number" >
+                    <input   type="text" class="mt-2" id="location" placeholder="enter your location" >
+                    <button class="btn yeees w-50 mt-3" id="sub">Submit</button>
+                    <h3 id="output"></h3>
                 </div>
             </div>
         </div>
